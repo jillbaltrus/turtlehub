@@ -1,0 +1,5 @@
+type Query {
+    getAllMembers: [Member]!
+    getPointReportForMember(id: Int!): MemberPointReport!
+    getAllPointsForMember(id: Int!): [PointLog]!
+}

@@ -1,0 +1,26 @@
+enum PointTypeValue {
+    ACADEMIC,
+    COMMUNITY_SERVICE
+    DEI,
+    GREEK,
+    PANHEL,
+    RISK,
+    SISTERHOOD
+}
+
+enum GradeValue {
+    FRESHMAN,
+    SOPHOMORE
+    MIDDLER,
+    JUNIOR,
+    SENIOR,
+    RISK,
+    SISTERHOOD
+}
+
+enum MemberStatusValue {
+    CO_OP,
+    CLASSES
+    ABROAD,
+    INACTIVE
+}

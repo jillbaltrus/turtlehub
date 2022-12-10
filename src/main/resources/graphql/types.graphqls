@@ -1,0 +1,61 @@
+type PointReport {
+    pointTypeValue: PointTypeValue!
+    earned: Int!
+    required: Int!
+}
+
+type MemberPointReport {
+    member: Member!
+    pointReports: [PointReport]!
+    allPointsEarned: Boolean!
+}
+
+type Member {
+    id: Int!
+    firstName: String!
+    lastName: String!
+    age: Int!
+    birthday: String!
+    major: String!
+    grade: Grade!
+    pledgeClass: String!
+    memberStatus: MemberStatus!
+    email: String
+    phoneNumber: String
+    pronouns: String
+    nuid: String
+    expectedGradeDate: String
+    numYearsAtNu: Int
+    favCandy: String
+    favColor: String
+    favRestaurant: String
+    favStore: String
+    hobbies: String
+}
+
+type Grade {
+    id: Int!
+    value: GradeValue!
+}
+
+type MemberStatus {
+    id: Int!
+    value: MemberStatusValue!
+}
+
+type PointType {
+    id: Int!
+    value: PointTypeValue!
+}
+
+type PointLog {
+    id: Int!
+    pointType: PointType!
+    member: Member!
+    approvedByMember: Member!
+    description: String!
+    quantity: Int!
+    createdAt: String!
+}
+
+
